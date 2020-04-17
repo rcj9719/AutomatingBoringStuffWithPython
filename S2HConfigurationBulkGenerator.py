@@ -2,11 +2,11 @@
 Author : Rhuta Joshi
 ---------------------------------------------------------------------------------------------------
 Title            : S2HConfigurationBulkGenerator.py
-Description      : This utility is developed to generate configurations from DR, required for S2H using NiFi.
-Pre-requisites   :  1. DR name,format and path should be valid and existing
+Description      : This utility is developed to generate configurations from excel sheet
+Pre-requisites   :  1. Excel sheet name,format and path should be valid and existing
                     2. Output path entered should be valid and existing
-                    3. "Table/View/Collection" column in Collections tab of DR should be sorted
-                    4. "Column Name" column in Attributes tab of DR should be sorted
+                    3. "Table/View/Collection" column in Collections tab of Excel workbook should be sorted
+                    4. "Column Name" column in Attributes tab of Excel workbook should be sorted
 Python Version   : 3.8
 ---------------------------------------------------------------------------------------------------
 Date                    Change Name             User              Description
@@ -17,9 +17,9 @@ April 01, 2020          Initial Draft           rcj9719           Created initia
 import xlrd
 import os
 
-mDRLocation = input("Enter full path of DR with filename and extension : ")
+mExcel workbookLocation = input("Enter full path of Excel workbook with filename and extension : ")
 
-mWorkBook = xlrd.open_workbook(mDRLocation)
+mWorkBook = xlrd.open_workbook(mExcel workbookLocation)
 mCollectionsSheet = mWorkBook.sheet_by_index(1)
 mAttributesSheet = mWorkBook.sheet_by_index(2)
 
