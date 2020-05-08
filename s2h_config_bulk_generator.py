@@ -1,7 +1,7 @@
 '''
 Author : Rhuta Joshi
 ---------------------------------------------------------------------------------------------------
-Title            : S2HConfigurationBulkGenerator.py
+Title            : s2h_config_bulk_generator.py
 Description      : This utility is developed to generate configurations from DR, required for S2H using NiFi.
 Pre-requisites   :  1. DR name,format and path should be valid and existing
                     2. Output path entered should be valid and existing
